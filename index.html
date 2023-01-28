@@ -6,33 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CETRAK CETREK LAMPU GUYS</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
-        integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- lampu 1 -->
-    <div>
-        <img src="assets/images/off.gif" alt="" id="lampu1">
-        <h1>CETREKAN LAMPU ON OFF BRO</h1>
-        <button onclick="saklar('on')">NYALAKAN LAMPU</button>
-        <button onclick="saklar('off')">MATIKAN LAMPU</button>
+    <div class=" flex justify-center items-center min-h-screen w-full bg-gray-800 gap-10">
+        <!-- lampu 1 -->
+        <div class="flex flex-col gap-2 py-4">
+            <img src="assets/images/off.gif" alt="" id="lampu1">
+            <button onclick="saklar('on')" class="bg bg-white p-4 text-black">NYALAKAN LAMPU</button>
+            <button onclick="saklar('off')" class="bg bg-white p-4 text-black">MATIKAN LAMPU</button>
+        </div>
+        <!-- lampu 2 -->
+        <div class="flex flex-col gap-2 py-4">
+            <img src="assets/images/off.gif" alt="" id="lampu2">
+            <button onclick="saklar('on')" class="bg bg-white p-4 text-black">NYALAKAN LAMPU</button>
+            <button onclick="saklar('off')" class="bg bg-white p-4 text-black">MATIKAN LAMPU</button>
+        </div>
+        <!-- lampu 3 -->
+        <div class="flex flex-col gap-2 py-4">
+            <img src="assets/images/off.gif" alt="" id="lampu3">
+            <button onclick="saklar('on')" class="bg bg-white p-4 text-black">NYALAKAN LAMPU</button>
+            <button onclick="saklar('off')" class="bg bg-white p-4 text-black">MATIKAN LAMPU</button>
+        </div>
     </div>
-    <!-- lampu 2 -->
-    <div>
-        <img src="assets/images/off.gif" alt="" id="lampu2">
-        <h1>CETREKAN LAMPU ON OFF BRO</h1>
-        <button onclick="saklar('on')">NYALAKAN LAMPU</button>
-        <button onclick="saklar('off')">MATIKAN LAMPU</button>
-    </div>
-    <!-- lampu 3 -->
-    <div>
-        <img src="assets/images/off.gif" alt="" id="lampu3">
-        <h1>CETREKAN LAMPU ON OFF BRO</h1>
-        <button onclick="saklar('on')">NYALAKAN LAMPU</button>
-        <button onclick="saklar('off')">MATIKAN LAMPU</button>
-    </div>
-
     <!-- INI ADALAH JS KITA -->
     <script src="saklar.js" type="application/javascript"></script>
 </body>
