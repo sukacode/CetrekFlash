@@ -5,19 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CETRAK CETREK LAMPU GUYS</title>
 </head>
 
 <body>
     <img src="assets/images/off.gif" alt="" id="lampu1">
     <h1>CETREKAN LAMPU ON OFF BRO</h1>
-    <button onclick="saklar()">NYALAKAN LAMPU</button>
+    <button onclick="saklar('on')">NYALAKAN LAMPU</button>
+    <button onclick="saklar('off')">MATIKAN LAMPU</button>
 
     <!-- INI ADALAH JS KITA -->
     <script>
-        function saklar() {
-            console.log('testing saklarnya')
+        function saklar(params) {
+            console.log(params);
+
             let lampu1 = document.getElementById("lampu1");
+
+            if (params == "on") {
+                //nyala
+                lampu1.src = "assets/images/on.gif"
+            }
+            if (params == "off") {
+                //mati
+                lampu1.src = "assets/images/off.gif"
+            }
+
+            return lampu1;
         }
     </script>
 </body>
